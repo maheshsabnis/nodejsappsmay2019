@@ -1,0 +1,37 @@
+use EmployeeDB
+db.departments.insert({DeptNo:10,DeptName:'IT',Location:'Pune'});
+db.departments.insert(
+[
+  {DeptNo:20,DeptName:'HRD',Location:'Pune'},
+  {DeptNo:30,DeptName:'SALES',Location:'Pune'},
+  {DeptNo:40,DeptName:'ACCOUNTS',Location:'Pune'},
+  {DeptNo:50,DeptName:'ADMIN',Location:'Pune'},
+  {DeptNo:60,DeptName:'TRAINING',Location:'Pune'}
+]
+)
+
+
+db.employeeinfos.find()
+
+db.employeeinfos.insert([
+{EmpNo:102,EmpName:'Leena',Salary:13000},
+{EmpNo:103,EmpName:'Tejas',Salary:43000},
+{EmpNo:104,EmpName:'Sachin',Salary:45000},
+{EmpNo:105,EmpName:'Vikram',Salary:33200},
+{EmpNo:106,EmpName:'Lokesh',Salary:12300},
+{EmpNo:107,EmpName:'Vinod',Salary:23400},
+{EmpNo:108,EmpName:'Tarun',Salary:34400},
+{EmpNo:109,EmpName:'Makrand',Salary:41400},
+{EmpNo:110,EmpName:'Sameer',Salary:245000},
+{EmpNo:111,EmpName:'Ajay',Salary:187000},
+{EmpNo:112,EmpName:'Amar',Salary:34900},
+{EmpNo:113,EmpName:'Mukesh',Salary:24500}
+])
+
+
+db.employeeinfos.insert([{
+ EmpNo:114,EmpName:'Mahesh',Salary:24000
+},
+{
+ EmpNo:115,EmpName:'Mahesh',Salary:22000
+}])

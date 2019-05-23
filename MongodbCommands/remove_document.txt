@@ -1,0 +1,21 @@
+db.employeeinfos.find()
+//removing document based on the _id
+db.employeeinfos.remove(
+{    "_id" : ObjectId("56cc82cb5462a18845645392")}
+)
+//removing document based on the EmpNo field
+db.employeeinfos.remove(
+{EmpNo:114}
+)
+
+//removing only the first Matching document with the field
+db.employeeinfos.remove(
+{EmpName:'Mahesh'},1
+)
+
+//removing all matching documents based on Field value
+db.employeeinfos.remove(
+{EmpName:'Mahesh'}
+)
+
+

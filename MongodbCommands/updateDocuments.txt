@@ -1,0 +1,20 @@
+db.employeeinfos.find()
+//Update Employee Salary by searching record based on _id 
+db.employeeinfos.update(
+{"_id" : ObjectId("56cb3140afc9cf5451533cae")},
+{$set:{Salary:90000}}
+)
+//Updating Document based on the field in the document
+db.employeeinfos.update(
+{EmpNo:101},
+{$set:{Salary:190000}}
+)
+
+//Update Salary of all EmpName with Value as Mahesh to 200000 
+db.employeeinfos.update(
+{EmpName:'Mahesh'},
+{$set:{Salary:200000}},
+{multi:true}
+)
+db.employeeinfos.find({EmpName:'Mahesh'})
+

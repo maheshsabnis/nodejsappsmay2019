@@ -1,0 +1,14 @@
+db.Student.find()
+
+//Select only Student Name, This will show _id and StudentName
+//Here 1 means show
+db.Student.find({},{StudentName:1}).pretty()
+
+//To display only StudentName set _id=0
+
+db.Student.find({},{StudentName:1,_id:0}).pretty()
+
+//To display StudentName with Course as IT 
+
+db.Student.find({'Courses.CourseName':'IT'},{StudentName:1,'Courses.CourseName':1})
+

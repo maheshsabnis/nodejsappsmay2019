@@ -1,0 +1,94 @@
+use EmployeeDB
+
+db.createCollection('Student')
+
+db.Student.insert([
+{
+  'StudentId':1,'StudentName':'Ajay','AcadYear':'First',
+  'Courses':[
+      {'CourseId':'CRS001','CourseName':'IT'},
+      {'CourseId':'CRS002','CourseName':'Civil'},
+      {'CourseId':'CRS003','CourseName':'Electronics'}
+  ]
+},
+{
+  'StudentId':2,'StudentName':'Basavraj','AcadYear':'First',
+  'Courses':[
+      {'CourseId':'CRS001','CourseName':'IT'},
+      {'CourseId':'CRS002','CourseName':'Civil'},
+      {'CourseId':'CRS003','CourseName':'Electronics'}  
+  ]
+},
+{
+ 'StudentId':3,'StudentName':'Chaitanya','AcadYear':'First',
+  'Courses':[
+      {'CourseId':'CRS001','CourseName':'IT'},
+      {'CourseId':'CRS002','CourseName':'Civil'}
+  ]
+},
+{
+  'StudentId':4,'StudentName':'Ajay','AcadYear':'Second',
+  'Courses':[
+      {'CourseId':'CRS001','CourseName':'IT'}  ,
+      {'CourseId':'CRS003','CourseName':'Electronics'}
+  ]
+},
+{
+  'StudentId':5,'StudentName':'Brijesh','AcadYear':'Second',
+  'Courses':[
+      {'CourseId':'CRS002','CourseName':'Civil'},
+      {'CourseId':'CRS003','CourseName':'Electronics'}  
+  ]
+},
+{
+ 'StudentId':6,'StudentName':'Chinmay','AcadYear':'Second',
+  'Courses':[
+      {'CourseId':'CRS001','CourseName':'IT'},
+      {'CourseId':'CRS002','CourseName':'Civil'}  
+  ]
+},
+{
+  'StudentId':7,'StudentName':'Amar','AcadYear':'First',
+  'Courses':[
+      {'CourseId':'CRS001','CourseName':'IT'},
+      {'CourseId':'CRS002','CourseName':'Civil'},
+      {'CourseId':'CRS003','CourseName':'Electronics'}  
+  ]
+},
+{
+  'StudentId':8,'StudentName':'Brijesh','AcadYear':'First',
+  'Courses':[
+      {'CourseId':'CRS002','CourseName':'Civil'},
+      {'CourseId':'CRS001','CourseName':'IT'}  
+  ]
+},
+{
+  'StudentId':9,'StudentName':'Charudatta','AcadYear':'First',
+  'Courses':[
+      {'CourseId':'CRS001','CourseName':'IT'},
+      {'CourseId':'CRS003','CourseName':'Electronics'}  
+  ]
+},
+{
+  'StudentId':10,'StudentName':'Akash','AcadYear':'Second',
+  'Courses':[
+      {'CourseId':'CRS003','CourseName':'Electronics'}  
+  ]
+},
+{
+  'StudentId':11,'StudentName':'Buddhabhushan','AcadYear':'Second',
+  'Courses':[
+      {'CourseId':'CRS002','CourseName':'Civil'}  
+  ]
+},
+{
+  'StudentId':12,'StudentName':'Chinmay','AcadYear':'Second',
+  'Courses':[
+     {'CourseId':'CRS002','CourseName':'Civil'}  
+  ]
+}
+
+])
+
+db.Student.find()
+

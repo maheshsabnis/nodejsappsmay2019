@@ -1,0 +1,53 @@
+//We will create a new Collection
+db.createCollection('Person')
+
+db.Person.insert([
+{PersonId:1,PersonName:'Mahesh',Email:'mahesh.s@user.com',Age:39},
+{PersonId:2,PersonName:'Leena',Email:'leema.s@user.com',Age:37},
+{PersonId:3,PersonName:'Vikram',Email:'vikram.p.s@user.com',Age:35},
+{PersonId:4,PersonName:'Suyash',Email:'suyash.k@user.com',Age:32},
+{PersonId:5,PersonName:'Anil',Email:'anil.k@user.com',Age:52},
+{PersonId:6,PersonName:'Abhay',Email:'abhay.k@user.com',Age:55},
+{PersonId:7,PersonName:'Nandu',Email:'Nandu.d@user.com',Age:59},
+{PersonId:8,PersonName:'Jayvant',Email:'jayvant.d@user.com',Age:54},
+{PersonId:9,PersonName:'Shyam',Email:'shyam.c@user.com',Age:51},
+{PersonId:10,PersonName:'Anil',Email:'anil.d@user.com',Age:45},
+{PersonId:11,PersonName:'Mukesh',Email:'mukesh.s@user.com',Age:57},
+{PersonId:12,PersonName:'Satish',Email:'satish.s@user.com',Age:59},
+{PersonId:13,PersonName:'Vivek',Email:'vivek.s@user.com',Age:61},
+{PersonId:14,PersonName:'Sandeep',Email:'sandeep.s@user.com',Age:51},
+{PersonId:15,PersonName:'Vinay',Email:'vinay.s@user.com',Age:48},
+{PersonId:16,PersonName:'Sharad',Email:'sharad.k@user.com',Age:65},
+{PersonId:17,PersonName:'Sanjay',Email:'sanjay.k@user.com',Age:58},
+{PersonId:18,PersonName:'Vijay',Email:'vijay.k@user.com',Age:57},
+{PersonId:19,PersonName:'Vilas',Email:'vilas.k@user.com',Age:51},
+{PersonId:20,PersonName:'Abhay',Email:'abhay.ku@user.com',Age:48},
+{PersonId:21,PersonName:'Kaustubh',Email:'kaustubh.k@user.com',Age:27},
+{PersonId:22,PersonName:'Rahul',Email:'rahul.d@user.com',Age:31},
+{PersonId:23,PersonName:'Abhishek',Email:'abhishek.l@user.com',Age:28},
+{PersonId:24,PersonName:'Tushar',Email:'tushar.s@user.com',Age:28},
+{PersonId:25,PersonName:'Abhijit',Email:'abhijit.k@user.com',Age:39},
+{PersonId:26,PersonName:'Ashwin',Email:'ashwin.a@user.com',Age:39},
+{PersonId:27,PersonName:'Vaibhav',Email:'vaibhav.n@user.com',Age:39},
+{PersonId:28,PersonName:'Prashant',Email:'prashant.m@user.com',Age:39},
+{PersonId:29,PersonName:'Vinit',Email:'vinit.n@user.com',Age:39},
+{PersonId:30,PersonName:'Prashant',Email:'prashant.m@user.com',Age:35}
+])
+
+db.Person.find()
+it
+
+
+//Defining index on Email
+db.Person.ensureIndex({Email:1})
+
+//Get indexes on the Collection
+//We will get the default index on _id which is created by MongoDB and Second is the Email whihc we have created
+db.Person.getIndexes()
+
+//Drop Index
+db.Person.dropIndex({Email:1})
+
+
+
+

@@ -1,0 +1,21 @@
+db.departments.find() //Read All Departments
+
+db.departments.find().pretty() //Read all Departments in Command Shell in JSON Format
+
+db.departments.findOne() //Read the first document
+
+db.departments.find({DeptNo:30}) //Read a Specific Document based on the criteria
+
+//Read Documents based on Criteria, Currently showing Employee Documents having Salary less than 30000
+db.employeeinfos.find({
+Salary:{$lt:30000}
+});
+
+//USe $lte for lessthan or Equal and $gte for greater than equal, use $ne for not equal to 
+
+//Read Documents based on Criteria, Currently showing Employee Documents having Salary more than 30000
+db.employeeinfos.find({
+Salary:{$gt:30000}
+});
+
+ 

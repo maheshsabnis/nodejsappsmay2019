@@ -1,0 +1,13 @@
+db.Student.find()
+
+//Read All Documents containing the CourseName value as 'IT'
+db.Student.find(
+{'Courses.CourseName':'IT'}
+)
+
+//Read all Documents containing the CourseName as the 0th entry in the COurses Array
+db.Student.find(
+{'Courses.0.CourseName':'Civil'}
+)
+
+

@@ -1,0 +1,14 @@
+use EmployeeDB
+db
+show dbs
+db.employeeinfos.insert({'EmpNo':101,'EmpName':'Mahesh','Salary':23000});
+db.dropDatabase()
+
+db.createCollection('departments')
+db.getCollectionNames()
+db.employeeinfos.find({'EmpNo':101})
+
+db.Products.find({})
+
+db.Products.insert({'ProductId':1,'ProductName':'Desktop All in One','Price':43000,'Category':'Electronics'})
+

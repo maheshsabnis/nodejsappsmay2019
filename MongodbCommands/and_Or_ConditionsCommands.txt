@@ -1,0 +1,20 @@
+db.employeeinfos.find()
+//The Query with AND Comdition use , (comma)
+db.employeeinfos.find(
+{EmpName:'Mahesh',Salary:{$gt:22000}}
+)
+
+//USing OR Condition, use $or operator
+db.employeeinfos.find(
+{
+  $or:[{EmpName:'Mahesh'},{Salary:{$gt:40000}}]
+}
+).pretty()
+//Combining AND and OR
+
+db.employeeinfos.find(
+ {EmpName:'Mahesh',$or:[{Salary:23000},{Salary:{$lt:60000}}]
+ })
+
+
+

@@ -1,0 +1,21 @@
+db.Student.find()
+//limit Retrive number of document 
+//Here the folowing query will retrive only 4 Records 
+db.Student.find({},{'StudentId':1, 'StudentName':1,'AcadYear':1,_id:0}).limit(4)
+
+//Skip the fisrt few records
+
+db.Student.find({},{'StudentId':1,'StudentName':1,'AcadYear':1,_id:0}).skip(4)
+
+//Skip first 3 documents and select next 3 documents
+
+db.Student.find({},{'StudentId':1,'StudentName':1,'AcadYear':1,_id:0}).skip(3).limit(3)
+
+//Soring the result 1 is ascending order and -1 is descending order
+
+//Ascending
+db.Student.find({},{'StudentId':1, 'StudentName':1,'AcadYear':1,_id:0}).sort({'StudentName':1})
+//Descending
+db.Student.find({},{'StudentId':1, 'StudentName':1,'AcadYear':1,_id:0}).sort({'StudentName':-1})
+
+
